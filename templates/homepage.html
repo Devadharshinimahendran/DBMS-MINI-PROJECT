@@ -6,12 +6,28 @@
     <title>Hotel Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Set background image for the entire page */
+        body {
+            background-image: url('/static/images/im2.jpg');
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background fixed when scrolling */
+            color: white; /* Makes the text white for better contrast on the background */
+        }
+        
+        /* Styling for container */
         .container {
             margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent dark overlay to make text readable */
+            padding: 30px;
+            border-radius: 10px;
         }
+        
+        /* Styling for table */
         .table th, .table td {
             text-align: center;
         }
+
         .card-header {
             text-align: center;
         }
@@ -61,10 +77,28 @@
             </div>
         </div>
 
-        <!-- Add New Room Form -->
-        <div id="add_room" class="card mt-4">
+        <style>
+            body {
+                color: black;
+            }
+    
+            /* Styling for Add Room Section */
+            #add-room-section .card-header h1 {
+                color: black; /* Make header text black */
+            }
+    
+            #add-room-section .form-group label {
+                color: black; /* Make form labels black */
+            }
+    
+            /* You can also set the text color of the button to black if needed */
+            .btn-success {
+                color: black;
+            }
+        </style>
+        <div id="add-room-section" class="card mt-4">
             <div class="card-header">
-                <h4>Add a New Room</h4>
+                <h1>Add a New Room</h1>
             </div>
             <div class="card-body">
                 <form action="/insert" method="POST">
@@ -84,10 +118,12 @@
                 </form>
             </div>
         </div>
-    </div>
-
-    <!-- Bootstrap JS & Dependencies -->
+        
+    
+   <!-- Bootstrap JS & Dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+    </body>
+    </html>
+     
+    
